@@ -1,6 +1,6 @@
 
 // Definir manualmente la fecha para la cuenta regresiva
-var fechaCuentaRegresiva = 'Oct 05, 2024 17:00:00';  // Cambia esta fecha según lo que necesites
+var fechaCuentaRegresiva = 'Apr 26, 2025 17:00:00';  // Cambia esta fecha según lo que necesites
 var countDownDate = new Date(fechaCuentaRegresiva).getTime();
 
 // Actualizar el contador cada 1 segundo
