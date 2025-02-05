@@ -101,32 +101,8 @@
 
 </style>
 <body>
-<!-- Modal musica-->
-<!-- Modal musica-->
-<div id="modalMusica" class="modal fade show" tabindex="-1" style="display: block;" aria-modal="true" role="dialog">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-body text-center">
-        <p>Invitación a la boda de Yetzi & Kevin</p>
-        <span style="color: white;">La música de fondo es parte de la experiencia</span>
-        <br>
-        <a class="boton" id="enterWithMusicButton" href="javascript:void(0)">Ingresar con música</a>
-        <a class="boton" id="enterWithoutMusicButton" href="javascript:void(0)">Ingresar sin música</a>
-
-        <!-- Lottie Player for animation (aparece después de ingresar con música) -->
-        <div class="music-button" id="musicButton" style="display: none;">
-          <lottie-player id="lottie-player" autoplay loop src="img/music-player-icon.json" style="width: 150px; height: 150px;"></lottie-player>
-        </div>
-
-        <!-- Audio player -->
-        <audio id="audioPlayer" src="source/boda.mp3"></audio>
-      </div>
-    </div>
-  </div>
-</div>
 
 
-  
     <!-- Portada -->
     <section class="portada p-5">
         <div class="portada-flor-izq-sup" id="portada-flor-izq-sup"></div>
@@ -244,7 +220,7 @@
     </section>
      <!-- End cuenta regresiva -->
 
-
+<!-- Salmo Biblico -->
 <section class="galeria">
 
 
@@ -283,95 +259,96 @@
 
   </div>
 </section>
-      <!-- End Ceremonia y fiesta -->
-      <!-- Galeria -->
-      <div id="responsiveCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicadores -->
-        <ol class="carousel-indicators">
-          <li data-target="#responsiveCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#responsiveCarousel" data-slide-to="1"></li>
-          <li data-target="#responsiveCarousel" data-slide-to="2"></li>
-        </ol>
-      
-        <!-- Slides -->
-        <div class="carousel-inner">
-
-          <!-- Slide 1 -->
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-6">
-                <img src="source/img/galeria/01.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 1" onclick="openModal(this)">
-              </div>
-              <div class="col-6">
-                <img src="source/img/galeria/02.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 2" onclick="openModal(this)">
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 2 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6">
-                <img src="source/img/galeria/03.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 3" onclick="openModal(this)">
-              </div>
-              <div class="col-6">
-                <img src="source/img/galeria/04.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 4" onclick="openModal(this)">
-              </div>
-            </div>
-          </div>
-      
-          <!-- Slide 3 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6">
-                <img src="source/img/galeria/05.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 5" onclick="openModal(this)">
-              </div>
-              <div class="col-6">
-                <img src="source/img/galeria/06.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 6" onclick="openModal(this)">
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6">
-                <img src="source/img/galeria/07.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 5" onclick="openModal(this)">
-              </div>
-              <div class="col-6">
-                <img src="source/img/galeria/08.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 6" onclick="openModal(this)">
-              </div>
-            </div>
-          </div>
-
-          <!-- Slide 4 -->
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-6">
-                <img src="source/img/galeria/09.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 5" onclick="openModal(this)">
-              </div>
-              <div class="col-6">
-                <img src="source/img/galeria/10.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 6" onclick="openModal(this)">
-              </div>
-            </div>
-          </div>
-
-        </div>
-      
-        <!-- Controles -->
-        <div class="carousel-controls">
-          <a class="carousel-control-prev" href="#responsiveCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only" >Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#responsiveCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-      
+  
+<!-- Galeria -->
+  <section>
+    <div id="responsiveCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicadores -->
+      <ol class="carousel-indicators">
+        <li data-target="#responsiveCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#responsiveCarousel" data-slide-to="1"></li>
+        <li data-target="#responsiveCarousel" data-slide-to="2"></li>
+      </ol>
     
+      <!-- Slides -->
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-6">
+              <img src="source/img/galeria/01.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 1" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="source/img/galeria/02.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 2" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="source/img/galeria/03.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 3" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="source/img/galeria/04.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 4" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="source/img/galeria/05.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 5" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="source/img/galeria/06.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 6" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="source/img/galeria/07.JPG" class="d-block w-100 img-thumbnail" alt="Imagen 5" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="source/img/galeria/08.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 6" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-6">
+              <img src="source/img/galeria/09.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 5" onclick="openModal(this)">
+            </div>
+            <div class="col-6">
+              <img src="source/img/galeria/10.jpg" class="d-block w-100 img-thumbnail" alt="Imagen 6" onclick="openModal(this)">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    
+      <!-- Controles -->
+      <div class="carousel-controls">
+        <a class="carousel-control-prev" href="#responsiveCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only" >Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#responsiveCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+      
     <!-- Modal para visualizar imagen -->
     <div class="modal fade" id="imageModal-gallery" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
@@ -390,164 +367,8 @@
     </div>
        <!-- End Galeria -->
 
-       <!-- Información -->
-       <section class="fiesta">
-
-        <div class="container">
-            <div class="row text-center d-flex justify-content-center align-items-center">
-
-
-
-                <div class="col-md-12">
-                    <h2 class="title">Fiesta</h2>
-                    <p class="subtitle">Hagamos juntos una fiesta épica. Aquí algunos detalles a tener en cuenta.</p>
-                </div>
-
-
-
-
-                <!-- Canciones -->
-                <div class="col-md-4 item-fiesta">
-
-
-                    <img class="hojas-musica"  src="img/img_hojasFiesta.svg"
-                        alt="">
-                
-                    <div
-                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
-
-
-
-                        <h3>Música</h3>
-
-                        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
-                            <div class="anim-musica" id="fiesta"></div>
-                        </div>
-
-
-                        <p>
-                          Ayudamos a completar la lista de canciones; coloca todas las que creas necesarias. </p>
-
-                        <a href="#" class="boton sugerir-canción">Sugerir canción</a>
-
-
-                    </div>
-
-                </div>
-
-
-
-
-                <!-- Dress Code -->
-                <div class="col-md-4 item-fiesta">
-
-                    <div
-                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
-
-                        <h3>Dress Code</h3>
-
-                        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
-                            <div class="anim-vestuario" id="anim-vestuario"></div>
-                        </div>
-
-                        <p>
-                            Una orientación para <br> tu vestuario </p>
-
-                        <a href="#" class="boton modal-vestuario">
-                            Ver más </a>
-
-                    </div>
-
-                </div>
-
-
-
-
-                <!-- Notas -->
-                <div class="col-md-4 item-fiesta">
-
-                    <div
-                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
-
-                        <h3>Tips y Notas</h3>
-
-
-                        <div class=" d-flex justify-content-center align-items-center content-anim-fiesta">
-                            <div class="anim-tips" id="anim-tips"></div>
-                        </div>
-
-
-                        <p>
-                            Información adicional <br> para tener en cuenta </p>
-
-
-                        <a href="#" class="boton  modal-tips">
-                            + Info </a>
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-        </div>
-        </section>
-
-        <!-- Regalos -->
-        <section class="regalos">
-
-
-            <div class="regalos-flor-der" id="regalos-flor-der"></div>
-    
-            <div class="container pb-5">
-                <div class="row text-center d-flex justify-content-center align-items-center">
-    
-                    <h2 class="title">Itinerario</h2>
-                    <p class="subtitle">Nuestra ceremonia y fiesta estan programadas de la siguiente manera.</p>
-    
-                    <div class="w-100">
-    
-                        <div class="anim-regalos" id="itinerario" style="width: 110px;"></div>
-                        <script>
-                          var animation = lottie.loadAnimation({
-                            container: document.getElementById('itinerario'), // ID del contenedor
-                            renderer: 'svg', // Renderizar en SVG
-                            loop: true, // Repetir en bucle
-                            autoplay: true, // Iniciar automáticamente
-                            path: 'source/img/animaciones/updated_itinerario.json' // Ruta del archivo JSON de la animación
-                          });
-                        </script>
-                    </div>
-    
-                    <br>
-    
-                    <a href="itinerario/index.html" class="boton" target="_blank">Ver itinerario</a>
-    
-                </div>
-            </div>
-                <div class="container py-4">
-                <div class="row text-center d-flex justify-content-center align-items-center">
-    
-                    <h2 class="title">Regalos</h2>
-                    <p class="subtitle">Si deseas regalarnos algo más que tu hermosa presencia...</p>
-    
-                    <div class="w-100">
-    
-                        <div class="anim-regalos" id="anim-regalos"></div>
-    
-                    </div>
-    
-                    <br>
-    
-                    <a href="#" class="boton modal-regalos" style="background-color: #38be82; color: white;">Cuenta Bancaria - Lista Regalos</a>
-    
-                </div>
-            </div>
-        </section>
-    
-<!-- Ceremonia y fiesta -->
-<section class="ceremonia-fiesta">
+       <!-- Ceremonia y fiesta -->
+<section class="ceremonia-fiesta py-5">
   <div class="ceremonia-fiesta-flor-der"></div>
   <div class="container">
     <div class="row justify-content-center align-items-center">
@@ -632,6 +453,62 @@
 
 </section>
 
+
+
+
+        <!-- Regalos -->
+        <section class="regalos">
+
+
+            <div class="regalos-flor-der" id="regalos-flor-der"></div>
+    
+            <div class="container pb-5">
+                <div class="row text-center d-flex justify-content-center align-items-center">
+    
+                    <h2 class="title">Itinerario</h2>
+                    <p class="subtitle">Nuestra ceremonia y fiesta estan programadas de la siguiente manera.</p>
+    
+                    <div class="w-100">
+    
+                        <div class="anim-regalos" id="itinerario" style="width: 110px;"></div>
+                        <script>
+                          var animation = lottie.loadAnimation({
+                            container: document.getElementById('itinerario'), // ID del contenedor
+                            renderer: 'svg', // Renderizar en SVG
+                            loop: true, // Repetir en bucle
+                            autoplay: true, // Iniciar automáticamente
+                            path: 'source/img/animaciones/updated_itinerario.json' // Ruta del archivo JSON de la animación
+                          });
+                        </script>
+                    </div>
+    
+                    <br>
+    
+                    <a href="itinerario/index.html" class="boton" target="_blank">Ver itinerario</a>
+    
+                </div>
+            </div>
+                <div class="container py-4">
+                <div class="row text-center d-flex justify-content-center align-items-center">
+    
+                    <h2 class="title">Regalos</h2>
+                    <p class="subtitle">Si deseas regalarnos algo más que tu hermosa presencia...</p>
+    
+                    <div class="w-100">
+    
+                        <div class="anim-regalos" id="anim-regalos"></div>
+    
+                    </div>
+    
+                    <br>
+    
+                    <a href="#" class="boton modal-regalos" style="background-color: #38be82; color: white;">Cuenta Bancaria - Lista Regalos</a>
+    
+                </div>
+            </div>
+        </section>
+    
+
     <!-- Sección Instagram con efecto Parallax -->
     <section class="instagram p-5">
       <div class="container">
@@ -660,7 +537,109 @@
       </div>
     </section>
     
+       <!-- Información -->
+       <section class="fiesta">
 
+        <div class="container">
+            <div class="row text-center d-flex justify-content-center align-items-center">
+
+
+
+                <div class="col-md-12">
+                    <h2 class="title">Fiesta</h2>
+                    <p class="subtitle">Hagamos juntos una fiesta épica. Aquí algunos detalles a tener en cuenta.</p>
+                </div>
+
+
+
+
+                <!-- Canciones -->
+                <!-- <div class="col-md-4 item-fiesta">
+
+
+                    <img class="hojas-musica"  src="img/img_hojasFiesta.svg"
+                        alt="">
+                
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+
+
+                        <h3>Música</h3>
+
+                        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-musica" id="fiesta"></div>
+                        </div>
+
+
+                        <p>
+                          Ayudamos a completar la lista de canciones; coloca todas las que creas necesarias. </p>
+
+                        <a href="#" class="boton sugerir-canción">Sugerir canción</a>
+
+
+                    </div>
+
+                </div> -->
+
+
+
+
+                <!-- Dress Code -->
+                <div class="col-md-4 item-fiesta">
+
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+                        <h3>Dress Code</h3>
+
+                        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-vestuario" id="anim-vestuario"></div>
+                        </div>
+
+                        <p>
+                            Una orientación para <br> tu vestuario </p>
+
+                        <a href="#" class="boton modal-vestuario">
+                            Ver más </a>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- Notas -->
+                <div class="col-md-4 item-fiesta">
+
+                    <div
+                        class="w-100 content-item-fiesta d-flex flex-column justify-content-between align-items-center">
+
+                        <h3>Tips y Notas</h3>
+
+
+                        <div class=" d-flex justify-content-center align-items-center content-anim-fiesta">
+                            <div class="anim-tips" id="anim-tips"></div>
+                        </div>
+
+
+                        <p>
+                            Información adicional <br> para tener en cuenta </p>
+
+
+                        <a href="#" class="boton  modal-tips">
+                            + Info </a>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+        </section>
   
   <!-- Modal asistencia-->
 <!-- Modal confirmar asistencia con Google Forms -->
@@ -741,8 +720,8 @@
 
             <div class="modal-body">
 
-                <p>🎩 Hombres y mujeres de gala 👠</p>
-                <p>Tomar en cuenta que es al aire libre 🥶</p>
+                <p>👔Caballeros: Traje elegante y formal</p>
+                <p>👗Damas: Vestido o vestimenta Elegante y formal</p>
 
             </div>
 
@@ -780,10 +759,13 @@
 
             <div class="modal-body">
 
-                <p>🚗 El parqueo está sobre grama</p>
-                <p>☔ Es temporada de lluvia</p>
-                <p>🥶 El clima es frío y la fiesta tiene entradas de bastante aire</p>
-                <p>📍  Cada invitado tendrá estipulado su número de mesa, a la entrada del salón podrás ubicar en que mesa estarás.</p>
+                <p>🚘El parqueo será dentro de las instalaciones de Antigua Hills y tendrá un costo de Q40 por todo el evento.</p>
+                <p>🌳La ceremonia se realizará al aire libre en jardín. </p>
+                <p>🏠La recepción se llevara a cabo en el mismo lugar, en el salón techado.</p>
+                <p>✨Te recordamos que hemos apartado un lugar especial para ti, porfavor respeta el número de invitados que tienes en tu invitación.</p>
+                <p>🔢Al entrar al salón, encontrarás tu número de mesa, para que puedas ubicarte en ella.</p>
+                <p>⛔Te pedimos que durante todo el evento no interrumpas las tomas del fotógrafo/video grafo.</p>
+                <p>🍸Después de la ceremonia puedes pasar por tu cóctel de bienvenida, mientras los novios están en su sesión de fotos.</p>
 
             </div>
 
