@@ -16,11 +16,23 @@
 			        <!-- Animaciones Lottie -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
 </head>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+	body{
+		margin: 0;
+		font-family: "IBM Plex Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+	}
+</style>
 <body>
-		<header>
-			
-		</header>
-	
+		        <!-- Portada -->
+				<div data-cue="fadeIn" style="background-image: url(../source/img/galeria/01.jpg); background-position: center center; background-size: cover; background-repeat: no-repeat; animation-name: fadeIn; animation-duration: 600ms; animation-timing-function: ease; animation-delay: 0ms; animation-direction: normal; animation-fill-mode: both; position: inherit; background-position-y: -50px; height:80vh;" data-show="true" >
+				</div>
+				 <!-- Portada -->
 		<section id="cd-timeline" class="cd-container">
 			<div class="cd-timeline-block">
 				<div class="cd-timeline-img cd-picture" id="itinerario" >
@@ -36,7 +48,7 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Ceremonia en Capilla <span>(5:00 pm)</span></h3>
+					<h3>Ceremonia: 5:00 a 5:30 pm (Jardin Antigua Hills)</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 	
@@ -54,7 +66,7 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Fotografías <span>(6:00 pm)</span></h3>
+					<h3>Coctail invitados y sesión privada de novios: 5:30 a 6:00 pm (instalaciones antigua Hills)</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 	
@@ -72,7 +84,7 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Ingreso de los Novios <span>(7:00 pm)</span></h3>
+					<h3> Ingreso de Novios a recepción: 6:00 pm (Salón techado)</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 	
@@ -90,7 +102,7 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Vals <span>(7:10 pm)</span></h3>
+					<h3>Vals novios: 6:10 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 	
@@ -108,7 +120,7 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Brindis y fotos <span>(7:25 pm)</span></h3>
+					<h3>Brindis y fotos con invitados: 6:15 a 7:00 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 	
@@ -126,8 +138,7 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Cena e inicia cabina de fotos <span>(8:00 pm)</span></h3>
-					<p>Todos deben pasar al mismo tiempo al buffet, no hay un orden por mesas.</p>
+					<h3>Cena: 6:30 a 7 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
@@ -145,7 +156,27 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Inicia el baile <span>(8:45 pm)</span></h3>
+					<h3>Apertura de Baile y cabina de fotos: 7:00 a 10:50 pm</h3>
+				</div> <!-- cd-timeline-content -->
+			</div> <!-- cd-timeline-block -->
+
+
+
+			<div class="cd-timeline-block">
+				<div class="cd-timeline-img cd-location" id="ramo">
+					<script>
+						var animation = lottie.loadAnimation({
+						  container: document.getElementById('ramo'), // ID del contenedor
+						  renderer: 'svg', // Renderizar en SVG
+						  loop: true, // Repetir en bucle
+						  autoplay: true, // Iniciar automáticamente
+						  path: '../source/img/animaciones/ramo.json' // Ruta del archivo JSON de la animación
+						});
+					  </script>
+				</div> <!-- cd-timeline-img -->
+	
+				<div class="cd-timeline-content">
+					<h3>Ramo y Liga: 9:30 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
@@ -163,25 +194,25 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Pastel y finaliza cabina de fotos <span>(10:00 pm)</span></h3>
+					<h3>Pastel: 9:40 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
 			<div class="cd-timeline-block">
-				<div class="cd-timeline-img cd-location" id="ramo">
+				<div class="cd-timeline-img cd-location" id="dance2">
 					<script>
 						var animation = lottie.loadAnimation({
-						  container: document.getElementById('ramo'), // ID del contenedor
+						  container: document.getElementById('dance2'), // ID del contenedor
 						  renderer: 'svg', // Renderizar en SVG
 						  loop: true, // Repetir en bucle
 						  autoplay: true, // Iniciar automáticamente
-						  path: '../source/img/animaciones/ramo.json' // Ruta del archivo JSON de la animación
+						  path: '../source/img/animaciones/dance.json' // Ruta del archivo JSON de la animación
 						});
 					  </script>
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Ramo y Liga <span>(10:30 pm)</span></h3>
+					<h3>Juegos pirotecnicos: 10:50 pm</h3>
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 
@@ -199,8 +230,8 @@
 				</div> <!-- cd-timeline-img -->
 	
 				<div class="cd-timeline-content">
-					<h3>Fin <span>(11:00 pm)</span></h3>
-					<p>Gracias por acompañarnos, te deseamos un buen retorno a casa.</p>
+					<h3>Fin de Boda: 11 pm</h3>
+					<!-- <p>Gracias por acompañarnos, te deseamos un buen retorno a casa.</p> -->
 				</div> <!-- cd-timeline-content -->
 			</div> <!-- cd-timeline-block -->
 		</section> <!-- cd-timeline -->
