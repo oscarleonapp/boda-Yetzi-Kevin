@@ -96,9 +96,6 @@
   #modalMusica .modal-body {
     text-align: center;
   }
-
-
-
 </style>
 <body>
 
@@ -275,7 +272,7 @@
 </section>
   
 <!-- Galeria -->
-  <section>
+  <section class="galeria pb-3">
     <div id="responsiveCarousel" class="carousel slide" data-ride="carousel">
       <!-- Indicadores -->
       <ol class="carousel-indicators">
@@ -387,9 +384,9 @@
   <div class="container">
     <div class="row justify-content-center align-items-center">
       <div class="col-md-6 col-ceremonia text-center d-flex flex-column justify-content-center align-items-center">
-        <div class="anim-anillos">
-          <div id="anim-anillos"></div>
-        </div>
+        <div class="d-flex justify-content-center align-items-center content-anim-fiesta">
+          <div class="anim-anillos" id="anim-anillos"></div>
+      </div>
         <script>
           var animation = lottie.loadAnimation({
             container: document.getElementById('anim-anillos'), // ID del contenedor
@@ -401,7 +398,7 @@
         </script>
 
         <br>
-        <h3 style="font-size: px;">Ceremonia y Fiesta</h3>
+        <h3 style="font-size: 45px;">Ceremonia y Fiesta</h3>
         <div class="info-col">
           <div class="info-box">
             <h6>Día</h6>
@@ -513,6 +510,8 @@
                   </div>
               </div>
 
+              
+              
                 <!-- Canciones -->
                 <!-- <div class="col-md-4 item-fiesta">
 
@@ -821,23 +820,18 @@
             </div>
 
             <div class="modal-body">
-              <p> Su presencia en nuestra boda es el mejor regalo. Sin embargo, si desean apoyarnos en nuestro futuro, les compartimos los datos de nuestra cuenta bancaria, o el día del evento podrán encontrar un buzón para depositar su sobre.</p> 
-              <p> Si optan por hacer un depósito o transferencia, por favor, acompáñenlo con un mensaje de cariño por medio de WhatsApp; nos hará el doble de felices. </p>
-                <p><strong>Yetzi</strong>
+              <p>Tu presencia en nuestra boda es nuestro mejor regalo, sin embargo si deseas apoyarnos en nuestro futuro, te compartimos 3 opciones para que puedas regalarnos un detalle más:</p> 
+              <p>* Puedes regalarnos algo de nuestra lista de Cemaco: <br> <a href="https://www.cemaco.com/list/bodafuentescoronado20250426" target="_blank">Clic para ver la lista</a></p>
+              <p>* Te compartimos nuestra cuenta bancaria:</p>
+                <p><strong>Yetzirah Coronado</strong>
                     <br>
-                    Banco Industrial
+                    Banco BAC
                     <br>
-                    Cuenta Monetaria / Quetzales
+                    Cuenta de ahorro
                     <br>
-                    XXXX XXXX XXXX
+                    No.972147482
                 </p>
-                <p><strong>Kevin</strong>
-                    <br>
-                    Banco Industrial
-                    <br>
-                    Cuenta Monetaria / Quetzales
-                    <br>
-                    XXX XXX XXX
+                <p>* O en el evento también  encontrarás una mesa de regalos para que puedas colocar el tuyo.
                 </p>
                  </div>
 
@@ -1409,6 +1403,5 @@
               path: 'img/music-player-icon.json' // Ruta del archivo JSON de la animación
             });
         </script>
-
 </body>
 </html>

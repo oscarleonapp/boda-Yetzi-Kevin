@@ -1890,7 +1890,7 @@ footer p a:hover{
 
 /* Cambiar el color de los indicadores */
 .carousel-indicators li {
-  background-color: #81948b;
+  background-color: #c6d7cf;
 }
 
 /* Cambiar el color de los indicadores activos */
@@ -1901,7 +1901,7 @@ footer p a:hover{
 /* Cambiar el color de los botones de control */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #81948b;
+  /* background-color: #c6d7cf; */
   border-radius: 50%;
   padding: 15px;
 }

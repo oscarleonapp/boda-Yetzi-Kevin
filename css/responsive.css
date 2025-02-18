@@ -545,7 +545,7 @@
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #000; /* Cambiar color del ícono si es necesario */
+  /* background-color: #c6d7cf; */
   padding: 10px;
   border-radius: 50%;
 }
